@@ -19,7 +19,7 @@ if submit and not theme:
 if submit:
     with st.spinner("AI正在瞎掰中，请稍等"):
         result = generate_xiaohongshu(theme, openai_api_key)
-        ##st.divider
+        st.divider()
         left_column,right_column = st.columns(2)
         with left_column:
             st.markdown("##### 小红书标题1")
