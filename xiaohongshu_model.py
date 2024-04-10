@@ -1,0 +1,6 @@
+from langchain_core.pydantic_v1 import BaseModel,Field
+from typing import List
+
+class xiaohongshu(BaseModel):
+    titles: List[str] = Field(description="小红书的5个标题",max_items=5,min_items=5)
+    contents: str = Field(description="小红书的正文内容")
